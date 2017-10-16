@@ -1,0 +1,774 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	color:#333;
+	}
+a{
+	text-decoration:none;
+	color:#333;}
+img{
+	border: 0px; 
+}
+
+/*header*/
+.header{
+	margin:o;
+	padding:0;
+	width:100%;
+	}
+ .header .first{
+	width:100%;
+	height:30px;
+	background:#E4E3E3;
+	}
+ .header .first .ahead{
+	position: relative;
+	float:left;
+	width:400px;
+	margin-left:100px;
+	height:30px;
+	line-height:30px;
+	}
+.header .first a{
+	margin-left:20px;}
+.header .first a:hover{
+	color:rgb(255,0,54);
+	text-decoration:underline;
+}
+
+
+.header .first .back{
+	position: absolute;
+	left:600px;
+	overflow: hidden;
+	float:left;
+	height:30px;
+	line-height:30px;}
+
+.header .second{
+	width:100%;
+	height:130px;}	
+.header .second .logo-area{
+	float:left;
+	height:130px;
+	margin-left:50px;
+	}
+
+.header .second .logo-area img{
+	width:240px;
+	height:130px;
+}
+.header .second .search-area{
+	float:left;
+	position: absolute;
+	left:350px;
+	overflow: hidden;
+	/*height:130px;*/
+	margin-top:40px;
+	margin-left:10px;
+
+}
+.header .second .search-area .search-form{
+	width:600px;
+	height:35px;
+	border:1px solid rgb(255,0,54);
+	margin:0;
+	padding: 0;
+	}	
+.header .second .search-area .search-text {
+  text-indent: 10px;
+  width:450px;
+  height:29px;
+  outline:none;
+  border:none;
+
+  margin: 0;
+  padding: 0;
+  /*  border-radius: 2px;
+box-sizing: border-box;*/
+ 
+}
+
+.header .second .search-area .search-submit{
+	width:145px;
+    height:35px;
+	/*outline:none;*/
+	background-color:rgb(255,0,54);
+	border:none;
+
+	cursor:pointer;
+	color:white;
+	font-size:15px;
+	margin: 0;
+	padding: 0;
+	}
+	.header .second .search-area .search-hot {
+		margin-top:5px;
+		}
+	.header .second .search-area .search-hot a{
+		margin-left:10px;
+		margin-right:10px;
+		curson:pointer;
+		background:url(TM-image/site/fenge.png) no-repeat;
+		}
+	.header .second .search-area .search-hot a:hover{
+		color:rgb(255,0,54);
+
+		}
+	
+	
+	/*main*/
+	.main{
+		width:100%;
+	height: 540px;
+	background:rgb(232,232,232);
+}
+	.main .first{
+		
+		width:100%;
+		height:40px;
+		background:rgb(255,0,54);
+	overflow: hidden;}
+	.main .first span{
+		display:block;
+		float:left;
+		width:180px;
+		text-align:center;
+		background:rgba(189,59,61,0.5);
+		margin-left:80px;
+		height:40px;
+		line-height:40px;
+		color:white;
+		font-size:18px;
+		font-weight:bold;}
+	.main .first a{
+		float:left;
+		margin-left:30px;
+		height:40px;
+		line-height:40px;
+		color:white;
+		font-size:18px;
+		font-weight:500;
+		}
+		.main .second {
+		
+			position: relative;
+		}
+		
+	.main .second .fenlei{
+		position:absolute;
+		left:80px;
+		height:500px;
+		float:left;
+		width:180px;
+		background:rgba(236,236,236,1.00);
+		z-index: 1;
+		}
+		.main .second .fenlei ul{
+			margin-top:3px;
+		}
+		.main .second .fenlei li{
+		
+			margin-left:-40px;
+			list-style: none;
+			height:33px;
+			line-height:33px;
+			text-indent: 20px;
+
+			}
+		.main .second .fenlei a{
+			display: block;
+		}
+		/*被选中的那一项背景为白色 */
+		.on{
+			background: white;
+		}
+		.main .second .fenlei a:hover{
+			color: rgb(255,0,54);
+		}
+
+	.main .second .lunbo{
+	  
+	}
+	
+	
+	.main .second .lunbo .pic{
+		position: relative;
+		margin:0;
+	}
+	.main .second .lunbo .pic li{
+		list-style: none;
+	}
+	.main .second img{
+		position:absolute;
+		left:169px;
+		
+		}
+	.main .second .lunbo .circle{
+		position: absolute;
+		left: 50%;
+		top: 450px;
+		margin:0;
+
+	}
+	.main .second .lunbo .circle li{
+		list-style: none;
+		float: left;
+		border: 2px solid rgba(151, 148, 148, 0.50);
+		border-radius: 50%;
+		margin-left: 15px;
+		font-weight: 40px;
+		/*background-color:rgba(151, 148, 148, 0.50);*/
+	}
+	.main .second .lunbo .circle li:hover{
+		cursor: pointer;
+	}
+	.selected{
+		background-color:rgba(22, 21, 21, 0.50);
+		
+	}
+
+		.main .second .fugai div{
+			position: absolute;
+			left: 260px;
+			z-index:100;
+			width: 800px;
+			height: 500px;
+			background:white;
+			display: none;
+		}
+		.main .second .fugai div .h4-1{
+			position: absolute;
+			float: left;
+			left: 20px;
+		    letter-spacing: 3px;
+			
+		
+		}
+		.main .second .fugai div .h4-2{
+			position: absolute;
+			float: left;
+			left: 20px;
+			top:100px;
+		    letter-spacing: 3px;
+			
+		
+		}
+		.main .second .fugai div .h4-3{
+			position: absolute;
+			float: left;
+			left: 20px;
+			top:200px;
+		    letter-spacing: 3px;
+			
+		
+		}
+		.main .second .fugai div .detail1{
+			position: absolute;
+			float: left;
+			left:80px;
+			top:10px;
+			
+			
+		}
+		.main .second .fugai div .detail2
+		{
+			position: absolute;
+			float: left;
+			left:80px;
+			top:100px;
+			
+			
+		}
+		.main .second .fugai div .detail3
+		{
+			position: absolute;
+			float: left;
+			left:80px;
+			
+			top:200px;
+			
+		}
+		
+
+		.main .second .fugai div ul li{
+			list-style: none;
+			display: inline;
+			
+			margin-right: 10px;
+			
+			height: 30px;
+			line-height: 30px;
+		}
+		
+		.main .second .fugai div ul li a:hover{
+			color: rgb(255,0,54);
+		}
+    .brand{
+		position: relative;
+		width: 100%;
+		height: 500px;
+		background-color: rgb(245,245,245);
+		margin-top:0;
+		overflow: hidden;
+	}
+	.brand-list{
+		position:absolute;
+		left: 80px;
+		top:40px;
+		width:1189px;
+		height: 480px;
+		background: rgb(245,245,245);
+		
+	}
+
+	.brand .brand-list ul{
+		margin-top:0;
+
+	}
+	.brand .brand-list li{
+		background: white;
+		margin-top:0;
+		float: left;
+		position: relative;
+		list-style: none;
+		width: 150px;
+		height: 150px;
+		border: 0.2px solid rgb(245,245,245);
+    
+	}
+	.brand .brand-list li .brand-img{
+		position: absolute;
+		top:25px;
+		left:25px;
+	}
+	.brand .brand-list li .mask{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 150px;
+		height: 150px;
+		background-color: rgba(32, 31, 31, 0.70);
+		display: none;
+	}
+	.brand .brand-list li .mask .coupon{
+		position: absolute;
+		left: 50px;
+		top:80px;
+		color:white;
+	}
+	.brand .brand-list li .mask .enter{
+		position: absolute;
+		left: 40px;
+		top:110px;
+		background-color:rgb(211, 10, 10);
+		border-radius: 10px;
+
+	}
+	.brand .brand-list li .mask .enter a{
+		padding:5px 10px;
+		color:white;
+	}
+
+	.goods{
+		position: relative;
+		width:100%;
+		height: 570px;
+		background-color:rgb(245,245,245);
+		
+	}
+	.goods .goods-list{
+		position: absolute;
+		width: 1349px;
+		margin-left:0 auto;
+		height: 540px;
+	
+		background-color:rgb(245,245,245);
+		top:20px;
+		overflow: hidden;
+		margin-top:10px;
+		
+
+	}
+	.goods .goods-list ul{
+		margin-top:0;
+	}
+
+	.goods .goods-list ul li{
+		
+		position: relative;
+		list-style: none;
+		float: left;
+		width: 250px;
+		height: 290px;
+		left:-18px;
+		margin-left: 10px;
+	}
+	/*第一个ul里面有一个大标题h2占40px 所以第二个ul 里的每个li的高要重新设置*/
+	.goods .goods-list ul .goods-item1{
+		height: 250px;
+	}
+
+	.goods .goods-list h2{
+		height: 40px;
+		line-height: 40px;
+		color: white;
+		background:rgb(255,0,54);
+		text-align: center;
+		margin:0;
+	}
+	
+	.goods .goods-list ul li .img-con{
+		background: white;
+		width: 250px;
+		height: 250px;
+		margin-bottom: 1px;
+		
+	}
+	
+	.goods .goods-list ul li .img-con .item-title{
+		width: 250px;
+		height: 40px;
+		text-align: center;
+		
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 40px;
+      
+		display: block;
+		
+		
+	}
+	.goods .goods-list ul li .img-con .item-sub-title{
+		width: 250px;
+		height: 20px;
+		text-align: center;
+		color:rgb(151, 148, 148);
+		font-size: 15px;
+		line-height: 20px;
+      
+		display: block;
+	}
+	.goods .goods-list ul li .img-show{
+		position: relative;
+		left: 50%;
+		top:20px;
+		margin-left: -70px;
+	   
+	}
+	.goods .goods-list ul .goods-item1{
+		margin-top:2px;
+	}
+	
+	.juhuasuan{
+		height: 110px;
+		width: 1349px;
+		background: rgb(245,245,245);
+
+	}
+	.juhuasuan a{
+		display: block;
+		width: 1290px;
+		margin: 0 auto;
+		height: 110px;
+		background:rgb(245,245,245);
+
+	}	
+	.juhuasuan a img{
+		padding-top:20px;
+	}
+
+    .floor{
+		position: relative;
+	
+		width: 1349px;
+		height: 500px;
+		background: rgb(245,245,245);
+
+	}
+	.floor .floor-first{
+		position: absolute;
+		top:30px;
+		left: 50%;
+		margin-left: -645px;
+		width: 1290px;
+		height: 30px;
+		background: rgb(245,245,245);
+
+	}
+	.floor .floor-first .floor-title{
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		font-weight: 300;
+		float: left;
+	}
+	.floor .floor-first ul{
+		margin: 0;
+		padding: 0;
+		float: right;
+	}
+	.floor .floor-first ul li{
+		list-style: none;
+		float: left;
+		margin-right:30px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.floor .floor-first ul li a:hover{
+		text-decoration: underline;
+
+	}
+	.floor .floor-second{
+		position: absolute;
+		top:60px;
+		left: 50%;
+		margin-left: -645px;
+		width: 1290px;
+		height: 440px;
+		
+	}
+	.floor .floor-second .banner-con{
+		width: 246px;
+		height: 440px;
+	}
+	.floor .floor-second .banner-con a:hover img{
+		opacity: 0.7;
+	}
+	.floor .floor-second .banner-con a:hover{
+		color: red;
+	}
+
+	.floor .floor-second .banner-con img{
+	
+		left: 0;
+		top: 0;
+		width: 246px;
+		height: 330px;
+	
+		display: block;/*解决img和div缝隙之间的问题*/
+	
+	}
+	.floor .floor-second .banner-con .banner-con-jiange{
+		width: 246px;
+		height: 30px;
+		background:rgba(245,245,245,0.5);
+		text-align: center;
+	}
+	.floor .floor-second .banner-con .banner-con-title{
+	
+		width: 246px;
+		height: 80px;
+		background: rgb(25,200,169);
+		text-align: center;
+		line-height: 45px;
+		font-size: 20px;
+		color:white;
+	
+	}
+
+	.floor .floor-second ul{
+		position: absolute;
+		margin: 0px;
+		padding: 0;
+	   left: 246px;
+	   top:0px;
+		width: 1044px;
+		height: 440px;
+	}
+	.floor .floor-second ul li{
+		list-style: none;
+		float: left;
+		width: 260px;
+		margin-left:1px;
+		margin-bottom: 1px;
+		height: 219px;
+		background: white;
+		position: relative;
+	
+
+	}
+	.floor .floor-second ul li h2{
+		margin: 10px 10px 0px 20px;
+		padding: 0;
+		font-size: 20px;
+		font-weight: 200;
+	}
+	.floor .floor-second ul li h5{
+		font-size: 16px;
+		margin: 5px 10px 5px 20px;
+		padding: 0;
+		color: rgb(25,200,169);
+	}
+	
+	.floor .floor-second ul li img{
+	
+		position: absolute;
+		right: 40px;
+		width: 150px;
+		height: 150px;
+		display: block;
+	}
+	.end{
+		width: 100%;
+		height: 80px;
+		background: rgb(245,245,245);
+	}
+	.end img{
+		width: 120px;
+		height: 68px;
+		position: relative;
+		left: 50%;
+		margin-left: -60px;
+		top:50%;
+		margin-top: -34px;
+		
+	}
+	/*footer*/
+	.footer ul,h3,hr{
+		margin: 0;
+		padding: 0;
+	}
+	.footer ul li{
+		list-style: none;
+
+	}
+	.footer{
+		position: relative;
+		width: 100%;
+		height: 565px;
+		background: white;
+
+	}
+	.footer .tm-ensure{
+		position: absolute;
+		top:30px;
+		left: 50%;
+		margin-left: -645px;
+		width: 1290px;
+		height: 100px;
+		overflow: hidden;
+	}
+	.footer .tm-ensure a{
+		margin-left: 20px;
+	}
+	
+	.footer .tm-des{
+		position: absolute;
+		top:130px;
+		left: 50%;
+		margin-left: -645px;
+		width: 1290px;
+		height: 213px;
+	
+
+	}
+	.footer .tm-des ul h3{
+		margin-top:30px;
+	}
+	.tm-des-title-first{
+		margin-left: 120px;
+	}
+	.footer .tm-des ul .tm-des-title{
+		color: rgb(100, 96, 96);		
+		float: left;
+		margin-right: 160px;
+	}
+	.footer .tm-des ul .tm-des-title-last{
+		float: left;
+		margin-right: 0px;
+	}
+	.footer .tm-des ul li .tm-des-sub-title{
+		color: rgb(161, 159, 159);
+
+	}
+	.footer .tm-des ul li{
+		line-height: 20px;
+	}
+	.footer .tm-des ul li img{
+		width: 105px;
+		height: 105px;
+	}
+	.footer .tm-copyright{
+		position: absolute;
+		top:343px;
+		left: 50%;
+		margin-left: -645px;
+		border-top:1px solid red;
+		width: 1290px;
+		height: 221px;
+		background: black;
+		color:white;
+
+	}
+	.footer .tm-copyright .footer-tm-img{
+		position: absolute;
+		left: 40px;
+		top:-31px;
+
+	}
+	.footer .tm-copyright p{
+		padding-left: 40px;
+	}
+	.footer .tm-copyright  p a{
+		color: white;
+		font-size: 12px;
+		font-weight: 200;
+		padding-right: 5px;
+	}
+	.footer .tm-copyright .tm-copyright-p-gray{
+		color: rgba(151, 148, 148, 0.50)
+	}
+   .tm-copyrigth-p-span{
+		margin:90px;
+
+	  
+	}
+	.footer .tm-copyright p .shangbiao{
+		width: 80px;
+		height: 30px;
+		margin-right: 20px;
+	}
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
